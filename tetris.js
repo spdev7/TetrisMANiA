@@ -210,12 +210,12 @@ function updateScore(){
 const colors = [
   null,
   'red',
-  'blue',
-  'violet',
-  'green',
-  'purple',
-  'orange',
-  'pink',
+  '#0061C4',
+  '#07B4B7',
+  '#03F839',
+  '#792176',
+  '#FD5002',
+  '#FD02F4',
 ];
 const arena = createMatrix(12 ,20);
 
@@ -232,7 +232,7 @@ document.addEventListener('keydown', event => {
     playerMove(1);
   }else if(event.keyCode === 40) {
       playerDrop();
-  }else if(event.keyCode === 81){
+  }else if(event.keyCode === 38){
     playerRotate(-1);
   }else if(event.keyCode === 87){
     playerRotate(1);
